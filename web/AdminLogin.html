@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Admin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/Adminlogincss.css">
+        <script type="text/javascript">
+            function validate()
+            {
+                var uname=document.myForm.username.value;
+                if(uname.length<1)
+                {
+                    alert("Please enter the Email");
+                    document.myForm.username.focus();
+                    return false;
+                }
+                var password=document.myForm.password.value;
+                if(password.length<1)
+                {
+                    alert("Please enter the Password");
+                    document.myForm.password.focus();
+                    return false;
+                    
+                }
+            }
+               
+            </script>
+    </head>
+
+<body>
+    <h1 align="center" style="margin-top: 100px;color: white">ADMIN LOGIN </h1>
+
+    <div id="login">
+
+<form name="myForm" method="post" action="login.jsp">
+<table>
+    <tr>
+        <td>Username : </td>
+        <td><input type="text" name="username"></td>
+    </tr>
+    <tr><td>Password :</td>
+        <td><input type="password"  name="password"></td></tr>
+    <tr>
+        <td colspan="2"><button type="submit" class="button" name="action" onClick="return validate();" value="Login" >LOGIN</button>
+    </td>
+    </tr>
+</table>
+    
+    </form>
+       
+    </div>
+</body>
+</html>
+    

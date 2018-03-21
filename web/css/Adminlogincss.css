@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 16, 2018, 3:50:59 PM
+    Author     : AMAN
+*/
+
+body
+{
+   background-image: url("../images/adminback.jpeg");
+}
+#login
+{
+    border:1px solid black;
+    margin: 50px;
+    font-size: 30px;
+   font-family:cursive;
+   padding-left: 250;
+   
+   text-align: center;
+}
+
+table
+{
+    margin-left: 300px;
+    padding: 50px;
+}
+
+td{
+    color:white;
+    font-size: 50px;
+    font-family: monospace;
+}
+
+.button
+{
+    width: 100px;
+    height: 30px;
+    color:black;
+    background:white;
+}
